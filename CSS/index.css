@@ -44,7 +44,7 @@ iframe{
     transform: scale(1.01);
 }
 .bgImage{
-    background-image: url(Images/ban3.jpg);
+    background-image: url(images/ban3.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -63,7 +63,7 @@ iframe{
 }
 
 .bgImage1{
-    background-image: url(Images/ban4.jpg);
+    background-image: url(/Images/ban4.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
