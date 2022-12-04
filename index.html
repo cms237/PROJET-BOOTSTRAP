@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Images/logo.png">
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="stylesheet" href="/CSS/bootstrap.css">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <title>ACCEUIL</title>
+</head>
+<body>
+    
+    <!-- Creation de la navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-image: url(Images/nav.png); background-color:rgb(16, 36, 88)">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/Images/logo.png" alt="logo" class="img-fluid ms-3 ms-md-5" width="40" height="40">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span>
+                <i class="fa fa-bars fa-2x text-white" aria-hidden="true"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown px-3" >
+                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Offres
+                    </a>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#tarif">Pack success</a></li>
+                      <li><a class="dropdown-item" href="#tarif">Pack Premium</a></li>
+                      <li><a class="dropdown-item" href="#tarif">Pack Gold</a></li>
+                    </ul>
+                  </li>
+              <li class="nav-item px-3">
+                <a class="nav-link " aria-current="page" href="#tarif">Tarifs</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link " href="#blog">Blog</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link " href="#atouts">Nos Atouts</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#"><img src="/Images/search.png" class="img-fluid" width="25" height="25" alt=""></a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#"><img src="/Images/aide.png" class="img-fluid" width="25" height="25" alt=""></a>
+              </li>
+            </ul>
+            <form class="d-flex me-5" role="search">
+                <button type="button" class="btn btn-success me-1">Connection</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">inscription</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!-- creation modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title display-5 text-primary" id="exampleModalLabel">Inscrivez vous Ici</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-6">
+                      <label for="validationCustom01" class="form-label fw-bold">Votre Nom</label>
+                      <input type="text" class="form-control" id="validationCustom01"  required>
+                      <div class="invalid-feedback">
+                        ce champ est oblogatoir
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="validationCustom02" class="form-label fw-bold">Votre Prenom</label>
+                      <input type="text" class="form-control" id="validationCustom02" required>
+                      <div class="invalid-feedback">
+                        ce champ est oblogatoir
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="validationCustom02" class="form-label fw-bold">Votre Login</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                              Ce champ est obligatoir.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label fw-bold" for="invalidCheck">
+                          Accepter les condition general
+                        </label>
+                        <div class="invalid-feedback fw-bold">
+                          vous devez accepter les condions
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="col-12 text-end">
+                      <button class="btn btn-primary " type="submit">Soumettre</button>
+                    </div>
+                  </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+      <!-- carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/Images/ban1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-1 fw-bold">Ouvert a vos Besoins</h5>
+              <p>
+                <span class="d-block mb-3 fs-4">Notre Equipe dynamique reste a votre Ecoute</span>
+                <button class="btn btn-primary px-5 border border-white">Nos Offres</button>
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/Images/ban2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-1 fw-bold">Ouvert a vos Besoins</h5>
+              <p>
+                <span class="d-block mb-3 fs-4">Notre Equipe dynamique reste a votre Ecoute</span>
+                <button class="btn btn-primary px-5 me-2 border border-white">Nos Offres</button>
+                <button class="btn btn-success px-4 border border-white">Nous connaitre</button>
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/Images/ban3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-1 fw-bold">Ouvert a vos Besoins</h5>
+              <p>
+                <span class="d-block mb-3 fs-4">Notre Equipe dynamique reste a votre Ecoute</span>
+                <button class="btn btn-primary px-5 border border-white">Nos Offres</button>
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/Images/ban4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-1 fw-bold">Ouvert a vos Besoins</h5>
+              <p>
+                <span class="d-block mb-3 fs-4">Notre Equipe dynamique reste a votre Ecoute</span>
+                <button class="btn btn-primary px-5 border border-white">Nos Offres</button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- contenu -->
+      <div class="container mt-3">
+        <div class="row">
+            <p class="display-5 text-center " id="blog" >Le digital pour la transformation de votre quotidien</p>
+            <div class="col-lg-6 ">
+                <iframe class="w-100 " style="height: 96%;"  src="https://www.youtube.com/embed/jnzDRZTadAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card cardFirst mb-3 text-center border border-primary">
+                    <img src="/Images/TAV.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card cardFirst mb-3 text-center border border-primary">
+                    <img src="/Images/E-COM.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <p class="my-5 text-center">
+                <a href="" class="btn btn-primary">Commandez un Service</a>
+            </p>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row bgImage">
+            <p class="text-white fw-bold display-3 text-center">Commandze Les Meilleurs Services Pour Les Petits Enfant</p>
+        </div>
+      </div>
+
+      <div class="container">
+        
+        <div class="row">
+            <p class="display-4 text-center mt-5" id="tarif">Consutez les Prix de Nos Offres</p>
+            <span class="text-center fs-4">Les Meilleurs Prix Pour Vous</span>
+            <div class="col-md-4">
+                <div class="card bg-secondary text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title display-6 fw-bold">Success</h5>
+                      <p class="card-text">
+                        <span class="fs-1">5000 Fcfa</span><span>/mois</span>
+                        <ul>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                        <button class="w-100 p-1 boutonHover border border-white">Select</button>
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-warning text-white mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title display-6 fw-bold">Gold</h5>
+                      <p class="card-text">
+                        <span class="fs-1">7000 Fcfa</span><span>/mois</span>
+                        <ul>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                        <button class="w-100 p-1 boutonHover border border-white">Select</button>
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-bg-success mb-3">
+                    <div class="card-body">
+                      <h5 class="card-title display-6 fw-bold">Platinium</h5>
+                      <p class="card-text">
+                        <span class="fs-1">5000 Fcfa</span><span>/mois</span>
+                        <ul>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                        <button class="w-100 p-1 boutonHover border border-white">Select</button>
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-5">
+        <div class="row bgImage1">
+        <p class="text-white fw-bold display-3 text-center">Un Monde et un Avenir Meilleur pour les plus petits est Possible</p>
+        </div>
+        <div class="row mt-5">
+            <p class="text-center display-4 mb-5" id="atouts">Decouvrez nos Atouts</p>
+            <div class="col-md-6">
+                <div class="card mb-3 bg-success">
+                    <div class="card-body">
+                      <h5 class="card-title text-white display-4 ">Protection des Enfants <i class="fa-solid fa-umbrella"></i></h5>
+                      <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dignissimos quo adipisci sint numquam expedita hic. Voluptates, dolorum eos enim repellat eius nostrum impedit blanditiis voluptatem labore ratione quasi sint!</p>
+                      <a href="#" class="btn btn-success border border-white p-2">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3 bg-primary">
+                    <div class="card-body">
+                      <h5 class="card-title text-white display-4 ">Developper les Talents <i class="fas fa-rocket"></i></h5>
+                      <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dignissimos quo adipisci sint numquam expedita hic. Voluptates, dolorum eos enim repellat eius nostrum impedit blanditiis voluptatem labore ratione quasi sint!</p>
+                      <a href="#" class="btn btn-primary border border-white p-2">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="container-fluid mt-5 pt-3" style="background-image: url(/Images/footer.png); background-color:rgb(16, 36, 88); height:50px">
+        <footer>
+            <p class="text-center text-white">
+                CopyRight: &copy;2022 fa-copyRight httc - Tous droit reserves
+            </p>
+        </footer>
+      </div>
+
+
+    <script src="/JS/all.min.js"></script>
+    <script src="/JS/bootstrap.bundle.js"></script>
+    <script src="/JS/index.js"></script>
+</body>
+</html>
